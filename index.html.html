@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas and Aura - Votre Voyage, Notre Expertise</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Nouveau dégradé avec un bleu adouci */
+            background: linear-gradient(135deg, #4A69BD 0%, #4A69BD 60%, #FFFFFF 80%, #BF0A30 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #f9fafb; /* Couleur de secours */
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #3b82f6;
+            border-radius: 9999px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="text-center py-8 bg-white rounded-xl shadow-lg mb-8">
+            <!-- The logo image has been updated with the URL you provided. -->
+            <img src="https://framerusercontent.com/images/Nt7KwZ4CBCvhMYHjRFIpoADK3cU.png?scale-down-to=512" alt="Atlas and Aura Logo" class="mx-auto h-24 mb-4 rounded-full">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-2">ATLAS AND AURA</h1>
+            <p class="text-xl text-gray-600">Votre Voyage, Notre Expertise</p>
+        </header>
+
+        <!-- The Hero Image Section has been removed as requested. -->
+
+        <!-- Qui sommes-nous ? Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">✨ Qui sommes-nous ?</h2>
+            <p class="mb-4">Chez Atlas and Aura, nous créons des expériences de voyage sur mesure à Londres pour les groupes scolaires, les comités d’entreprise et les agences de voyage.</p>
+            <p class="mb-4">Basés à Londres, nous offrons une expertise locale, une réactivité immédiate et un accompagnement de bout en bout.</p>
+            <p class="mb-4">Notre mission : simplifier la logistique pour vous permettre de vous concentrer sur l’expérience.</p>
+            <p>Que ce soit pour un séjour éducatif, un voyage de récompense ou une escapade culturelle, nous proposons des circuits clés en main ou personnalisables.</p>
+        </section>
+
+        <!-- Ce qui nous distingue Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Ce qui nous distingue</h2>
+            <ul class="list-none space-y-3">
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <div>
+                        <strong class="font-medium">Implantation locale à Londres:</strong> Nous connaissons chaque quartier, partenaire et saison, garantissant des séjours fiables et optimisés.
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <div>
+                        <strong class="font-medium">Réseau de partenaires de qualité:</strong> Hôtels 3 ★ et 4 ★, autocaristes professionnels, guides certifiés, restaurants adaptés aux groupes — nous avons sélectionné les meilleurs prestataires.
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <div>
+                        <strong class="font-medium">Souplesse et personnalisation:</strong> Du voyage scolaire classique au programme premium, tout est adaptable : durée, rythme, confort, thématiques (Harry Potter, art, histoire, shopping, etc.).
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <div>
+                        <strong class="font-medium">Accompagnement 24/7:</strong> Notre équipe est disponible tout au long du séjour pour gérer les imprévus, faciliter les check-ins ou rassurer les accompagnateurs.
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Pour qui? Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Pour qui?</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong class="font-medium">Établissements scolaires:</strong> collèges, lycées, écoles internationales</li>
+                <li><strong class="font-medium">Comités sociaux et économiques (CSE):</strong> séjours culturels ou récréatifs pour salariés et familles</li>
+                <li><strong class="font-medium">Agences de voyage partenaires:</strong> vous gérez la vente, nous prenons en charge l’opérationnel</li>
+            </ul>
+        </section>
+
+        <!-- Ce que disent nos partenaires Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Ce que disent nos partenaires</h2>
+            <div class="space-y-4">
+                <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
+                    “Atlas and Aura est un partenaire de confiance. Réactifs, transparents et toujours disponibles. Nos groupes scolaires sont entre de bonnes mains.”
+                    <footer class="text-sm mt-1 text-gray-600">— Sophie L., responsable groupes scolaires – Agence Aventures Éducatives (Lyon)</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
+                    “Une qualité de service irréprochable, une équipe locale engagée et des retours clients excellents. Nous recommandons vivement.”
+                    <footer class="text-sm mt-1 text-gray-600">— Julien M., chef de produit groupes – Horizon Voyages (Paris)</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Conçu pour répondre à tous les profils Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Conçu pour s'adapter à tous les profils</h2>
+            <p class="mb-4">Que vous soyez une <strong class="font-medium">agences de voyage</strong>, un <strong class="font-medium">CSE</strong>, une <strong class="font-medium">école</strong> ou un <strong class="font-medium">organisateur indépendant</strong>, nous créons des séjours à Londres <strong class="font-medium">clé en main ou personnalisés</strong>, adaptés à vos objectifs, votre budget et votre public.</p>
+        </section>
+
+        <!-- Ce que nous proposons en standard Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Ce que nous proposons en standard</h2>
+            <!-- Added sentence about pricing and quotes -->
+            <p class="mb-4 text-sm text-gray-700">Les prix de nos packages standards peuvent varier en fonction de la période de réservation. N'hésitez pas à nous contacter ; nos équipes prépareront un devis personnalisé en moins de 24h.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Détail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Accueil et transferts A/R</td>
+                            <td>Autocar privé avec <strong class="font-medium">guide</strong> pour faciliter l’arrivée et les déplacements</td>
+                        </tr>
+                        <tr>
+                            <td>Tour panoramique inclus</td>
+                            <td>À l’arrivée, pour s’orienter dès le premier jour</td>
+                        </tr>
+                        <tr>
+                            <td>Hébergement de qualité</td>
+                            <td>Hôtels 3 ★ /4 ★ (Holiday Inn Kensington, etc.), chambres twins, triples ou quadruples</td>
+                        </tr>
+                        <tr>
+                            <td>🍽️ Repas</td>
+                            <td>Petit-déjeuner, demi-pension ou pension complète dans des restaurants adaptés aux groupes</td>
+                        </tr>
+                        <tr>
+                            <td>🎟️ Activités à la carte</td>
+                            <td>British Museum, London Eye, Tower of London, comédies musicales, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>🧑‍💼 Accompagnement local</td>
+                            <td>Assistance sur place, coordination, urgences – <strong class="font-medium">disponible 24/7</strong></td>
+                        </tr>
+                        <tr>
+                            <td>🎁 Gratuités</td>
+                            <td>Accompagnateurs, tour leaders, selon la taille du groupe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Pour quels types de groupes ? Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Pour quels types de groupes ?</h2>
+            <ul class="list-none space-y-3">
+                <li class="flex items-start">
+                    <span class="text-blue-500 mr-2 text-xl">🎓</span>
+                    <div>
+                        <strong class="font-medium">Établissements scolaires:</strong> programmes éducatifs ou linguistiques
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-blue-500 mr-2 text-xl">🧳</span>
+                    <div>
+                        <strong class="font-medium">Agences de voyage / autocaristes:</strong> solution réceptive fiable
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-blue-500 mr-2 text-xl">🏢</span>
+                    <div>
+                        <strong class="font-medium">CSE & entreprises:</strong> séjours culturels, incentives, récompenses
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-blue-500 mr-2 text-xl">👫</span>
+                    <div>
+                        <strong class="font-medium">Associations, groupes loisirs & familles:</strong> voyages à thème ou sur mesure
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Pourquoi nous choisir ? Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Pourquoi nous choisir ?</h2>
+            <ul class="list-none space-y-3">
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <strong class="font-medium">Devis sous 24h</strong>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <strong class="font-medium">Flexibilité totale</strong> (dates, budget, contenu)
+                </li>
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <strong class="font-medium">Prestataires testés & sélectionnés</strong>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <strong class="font-medium">Facturation simple et conditions claires</strong>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-green-500 mr-2 text-xl">✅</span>
+                    <strong class="font-medium">Présence locale = sécurité + réactivité</strong>
+                </li>
+            </ul>
+            <p class="mt-4 text-sm text-gray-600">Tarifs nets – Groupes à partir de 15 personnes. Sous réserve de disponibilité. Prix exprimés en EUR, valables pour l'année 2026.</p>
+        </section>
+
+        <!-- Tarifs Attractions Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Tarifs Attractions</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Attraction</th>
+                            <th>Tarif adulte</th>
+                            <th>Tarif enfant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cathédrale Saint-Paul</td><td>30 €</td><td>15 €</td></tr>
+                        <tr><td>London Eye</td><td>37 €</td><td>32 €</td></tr>
+                        <tr><td>Madame Tussauds</td><td>37 €</td><td>32 €</td></tr>
+                        <tr><td>Shakespeare’s Globe</td><td>28 €</td><td>20 €</td></tr>
+                        <tr><td>Tour de Londres</td><td>30 €</td><td>17 €</td></tr>
+                        <tr><td>Tower Bridge</td><td>20 €</td><td>10.50 €</td></tr>
+                        <tr><td>Greenwich – Cutty Sark</td><td>25 €</td><td>15.50 €</td></tr>
+                        <tr><td>Greenwich – Observatoire royal</td><td>25 €</td><td>15.50 €</td></tr>
+                        <tr><td>Palais de Kensington</td><td>29 €</td><td>16 €</td></tr>
+                        <tr><td>Jardins botaniques de Kew</td><td>25 €</td><td>9 €</td></tr>
+                        <tr><td>Palais de Hampton Court</td><td>29 € / 30.50 €</td><td>16 € / 17.50 €</td></tr>
+                        <tr><td>Château de Windsor</td><td>35.50 €</td><td>21 €</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Croisières sur la Tamise Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Croisières sur la Tamise</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trajet</th>
+                            <th>Tarif adulte</th>
+                            <th>Tarif enfant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Westminster/London Eye ↔ Tower (aller simple)</td><td>13 €</td><td>10 €</td></tr>
+                        <tr><td>Westminster/London Eye ↔ Greenwich (aller simple)</td><td>15.50 €</td><td>11 €</td></tr>
+                        <tr><td>Tower ↔ Greenwich (aller simple)</td><td>13 €</td><td>10 €</td></tr>
+                        <tr><td>Westminster/London Eye ↔ Greenwich (aller-retour)</td><td>19 €</td><td>14 €</td></tr>
+                        <tr><td>Tower ↔ Greenwich (aller-retour)</td><td>18 €</td><td>13 €</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Taillé pour les groupes, pensé pour votre tranquillité Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Taillé pour les groupes, pensé pour votre tranquillité</h2>
+            <p class="mb-4">Atlas and Aura vous accompagne à chaque étape de votre projet de voyage. Nos solutions sont pensées pour répondre aux attentes de groupes scolaires, de CSE, d'agences ou d'associations, en mettant l'accent sur la <strong class="font-medium">simplicité</strong>, la <strong class="font-medium">sécurité</strong> et la <strong class="font-medium">qualité de service</strong>.</p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Hébergement</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong class="font-medium">Partenaires hôteliers vérifiés</strong>, standards 3 ★ et 4 ★ (Holiday Inn Kensington, etc.)</li>
+                <li><strong class="font-medium">Chambres multiples</strong> : twin, triple, quadruple selon la composition du groupe</li>
+                <li>Accès possible à un <strong class="font-medium">leisure club</strong>, salles de réunion, espace sécurisé pour les jeunes</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Restauration</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Petit-déjeuner toujours inclus</li>
+                <li>Demi-pension ou pension complète en option</li>
+                <li>Menus adaptés (végétariens, allergies, halal…) sur demande</li>
+                <li>Restaurants testés, adaptés aux groupes et bien situés</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Transports & logistique</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Transferts A/R depuis tous les aéroports de Londres</li>
+                <li>Autocars privés confortables et conformes aux normes EU</li>
+                <li>Possibilité de transport local avec <strong class="font-medium">carte Oyster</strong> ou autocar privatif sur place</li>
+                <li>Guide francophone à l’arrivée pour chaque groupe (included)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Sécurité & encadrement</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Équipe disponible 24h/24 pendant toute la durée du séjour</li>
+                <li>Numéro d’urgence local communiqué à tous les groupes</li>
+                <li>Guides professionnels, expérimentés et formés à l'accueil de groupes</li>
+                <li>Hôtels, restaurants et prestataires sélectionnés selon des critères stricts (hygiène, accessibilité, accueil groupe)</li>
+            </ul>
+        </section>
+
+        <!-- Besoin spécifique ? Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Besoin spécifique ?</h2>
+            <p class="mb-4">Nous nous adaptons à vos demandes :</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>séjours thématiques (Harry Potter, art, histoire)</li>
+                <li>visites en anglais/français/espagnol</li>
+                <li>gestion multi-groupes ou multi-départs</li>
+                <li>extensions à Oxford, Cambridge, Windsor, etc.</li>
+            </ul>
+        </section>
+
+        <!-- Conditions commerciales Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title">Conditions Commerciales</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Condition</th>
+                            <th>Détail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Devis</td>
+                            <td>Sous 24h, gratuit et sans engagement</td>
+                        </tr>
+                        <tr>
+                            <td>Gratuités</td>
+                            <td>1 accompagnateur offert par groupe (selon la taille)</td>
+                        </tr>
+                        <tr>
+                            <td>Réservation</td>
+                            <td>Contrat simple et clair, sans surprise</td>
+                        </tr>
+                        <tr>
+                            <td>Paiement</td>
+                            <td>35 jours avant le départ</td>
+                        </tr>
+                        <tr>
+                            <td>Annulation</td>
+                            <td>Gratuite jusqu’à 35 jours avant le début du séjour (sauf billets non remboursables)</td>
+                        </tr>
+                        <tr>
+                            <td>Modifications</td>
+                            <td>Possibles jusqu’à 15 jours avant le départ, sujet à disponibilité</td>
+                        </tr>
+                        <tr>
+                            <td>Assurance</td>
+                            <td>Sur demande : assistance, annulation, rapatriement, responsabilité civile</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4">Chez <strong class="font-medium">Atlas and Aura</strong>, chaque groupe est unique — et chaque séjour l’est aussi. Que vous organisiez un voyage scolaire, un week-end culturel pour un comité d’entreprise ou un circuit pour vos clients, nous mettons tout en œuvre pour que l’expérience soit fluide, enrichissante et mémorable.</p>
+            <p class="mt-2">Nous vous accompagnons avec <strong class="font-medium">professionnalisme, réactivité et passion</strong>, du premier devis jusqu’au retour à domicile.</p>
+            <p class="mt-4 text-blue-600 font-semibold">👉 Demandez votre proposition personnalisée dès aujourd’hui ou planifiez un appel avec notre équipe.</p>
+        </section>
+
+        <!-- Contact & Call to Action Section -->
+        <section class="card text-center">
+            <h2 class="text-2xl font-semibold text-gray-900 section-title inline-block">📞 Contactez-nous Aujourd'hui</h2>
+            <div class="mt-4 text-lg space-y-2">
+                <p>📧 <a href="mailto:sales@atlasandaura.co.uk" class="text-blue-600 hover:underline">sales@atlasandaura.co.uk</a></p>
+                <p>📍 <a href="http://www.atlasandaura.co.uk" target="_blank" class="text-blue-600 hover:underline">www.atlasandaura.co.uk</a></p>
+                <p>📱 <span class="font-medium">+44 20 3996 2021</span></p>
+                <p class="text-sm text-gray-600">Basés à Londres – Organisation locale, garantie de réactivité.</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
